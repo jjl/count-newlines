@@ -4,6 +4,6 @@ version = "0.2.0"
 edition = "2024"
 license = "Apache-2.0"
 description = "A simple SIMD-enabled newline counter"
-repository = "https://github.com/jjl/co[unt-newlines"
+repository = "https://github.com/jjl/count-newlines"
 docs = "https://docs.rs/count-newlines"
 [dependencies]
