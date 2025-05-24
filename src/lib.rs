@@ -1,7 +1,8 @@
+#![no_std]
 #[cfg(target_arch="x86_64")]
-use std::arch::x86_64::*;
+use core::arch::x86_64::*;
 #[cfg(all(target_arch="x86", target_feature="sse2"))]
-use std::arch::x86::*;
+use core::arch::x86::*;
 
 /// Counts the number of newlines in a slice.
 pub fn count_newlines(slice: &[u8]) -> usize {
