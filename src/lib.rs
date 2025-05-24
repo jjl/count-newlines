@@ -10,7 +10,7 @@ pub fn count_newlines(slice: &[u8]) -> usize {
   let mut slice = slice;
   #[cfg(target_feature="sse2")] {
     unsafe {
-      let splat = _mm_set1_epi8(b'\r' as _);
+      let splat = _mm_set1_epi8(b'\n' as _);
       while slice.len() >= 64 {
         let ptr = slice.as_ptr().cast::<__m128i>();
         for i in 0..4 {
@@ -27,7 +27,7 @@ pub fn count_newlines(slice: &[u8]) -> usize {
     }
   }
   for c in slice {
-    if *c == b'\r' {
+    if *c == b'\n' {
       count += 1;
     }
   }
