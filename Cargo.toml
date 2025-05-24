@@ -1,9 +1,9 @@
 [package]
 name = "count-newlines"
-version = "0.1.0"
+version = "0.2.0"
 edition = "2024"
 license = "Apache-2.0"
 description = "A simple SIMD-enabled newline counter"
-repository = "https://github.com/jjl/count-newlines"
+repository = "https://github.com/jjl/co[unt-newlines"
 docs = "https://docs.rs/count-newlines"
 [dependencies]
